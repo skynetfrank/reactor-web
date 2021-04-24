@@ -215,6 +215,7 @@ img:hover {
 }
 #team h4 {
   padding-bottom: 40px;
+ 
 }
 #team .col-md-12 {
   text-align: center;
@@ -225,6 +226,10 @@ img:hover {
   padding: 15px;
 }
 
+
+h4{
+  font-weight: bold;
+}
 /* portfolio section */
 #portfolio {
   text-align: center;
