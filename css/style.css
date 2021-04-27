@@ -253,7 +253,7 @@ h4 {
 .filter-wrapper li a {
   color: #999999;
   font-size: 16px;
- font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   padding: 8px 17px;
   display: block;
@@ -370,7 +370,7 @@ h4 {
 }
 #contact h2 {
   border-right: 2px solid #f2af00;
- 
+
   padding: 10px 20px 10px 10px;
   margin-bottom: 60px;
   float: left;
@@ -423,16 +423,15 @@ h4 {
 
 /* footer section */
 footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: #000;
 }
 footer h2 {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 40px;
-}
+ }
 footer p {
   line-height: 20px;
+  font-size: 16px;
 }
 footer span {
   font-weight: bold;
@@ -469,8 +468,8 @@ footer span {
 
 /* copyright section */
 .copyright {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
 }
 
