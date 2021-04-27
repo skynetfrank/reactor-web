@@ -135,15 +135,15 @@ img:hover {
   line-height: 10px;
 }
 #home .btn {
-  background: rgba(255, 255, 255, 0.6);
-  border: 2px solid #444;
+  background: #4db6ac;
+  border: 1px solid #2e756e;
   border-radius: 0px;
   color: #444;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 16px;
   padding-top: 14px;
-  width: 200px;
+  width: 150px;
   padding: 20px;
   margin-top: 20px;
   transition: all 0.4s ease-in-out;
@@ -253,7 +253,7 @@ h4 {
 .filter-wrapper li a {
   color: #999999;
   font-size: 16px;
-  font-family: "lane_-_narrowregular", sans-serif;
+ font-family: "Raleway", sans-serif;
   font-weight: bold;
   padding: 8px 17px;
   display: block;
@@ -362,7 +362,7 @@ h4 {
 
 /* contact section */
 #contact {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 60px;
   text-align: center;
   background-size: cover;
@@ -370,9 +370,10 @@ h4 {
 }
 #contact h2 {
   border-right: 2px solid #f2af00;
-  display: inline-block;
+ 
   padding: 10px 20px 10px 10px;
   margin-bottom: 60px;
+  float: left;
 }
 #contact .form-control {
   border: 1px solid #00acc1;
@@ -475,7 +476,7 @@ footer span {
 
 /* scrolltop section */
 .go-top {
-  background-color: #f2af00;
+  background-color: #dc5034;
   font-size: 26px;
   bottom: 2em;
   right: 2em;
