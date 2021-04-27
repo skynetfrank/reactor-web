@@ -428,10 +428,15 @@ footer {
 footer h2 {
   padding-top: 20px;
   padding-bottom: 20px;
- }
+}
 footer p {
   line-height: 20px;
   font-size: 16px;
+  color: #cec5c5;
+}
+
+.copyright p {
+  color: #666;
 }
 footer span {
   font-weight: bold;
@@ -446,7 +451,7 @@ footer span {
   list-style: none;
 }
 .social-icons li a {
-  background: #9575cd;
+  background: #4db6ac;
   color: #ffffff;
   text-decoration: none;
   font-size: 30px;
