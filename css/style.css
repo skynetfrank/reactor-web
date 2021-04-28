@@ -515,6 +515,17 @@ footer span {
   .go-top {
     float: right;
   }
+
+#name{
+  position: relative;
+}
+#div-nombre > label{
+  position: relative;
+  top:100px;
+  right:160px;
+
+}
+
 }
 
 /* media 360 */
@@ -522,7 +533,23 @@ footer span {
   #team h4 {
     padding-bottom: 30px;
   }
+
+  #name{
+  position: relative;
 }
+#div-nombre > label{
+  position: relative;
+  top:100px;
+  right:160px;
+
+}
+}
+
+
+
+
+
+
 
 #contact .form-control::placeholder {
   color: rgb(155, 150, 150);
@@ -541,3 +568,7 @@ label {
   font-size: 20px;
   color: blue;
 }
+
+
+
+
