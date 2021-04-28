@@ -533,3 +533,9 @@ footer span {
 #envelope {
   padding: 15px;
 }
+
+label {
+  float: left;
+  font-size: 20px;
+  color: blue;
+}
