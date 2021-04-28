@@ -16,6 +16,29 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- google web font css -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			// https://dashboard.emailjs.com/admin/integration
+			emailjs.init('user_rV8QRiqSHPrul084aSGPh');
+		})();
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('contact-form').addEventListener('submit', function (event) {
+				event.preventDefault();
+				// generate a five digit number for the contact_number variable
+				this.contact_number.value = Math.random() * 100000 | 0;
+				// these IDs from the previous steps
+				emailjs.sendForm('service_ehpi6v9', 'template_b3rdkf5', this)
+					.then(function () {
+						console.log('SUCCESS!');
+					}, function (error) {
+						console.log('FAILED...', error);
+					});
+			});
+		}
+	</script>
 
 </head>
 
@@ -39,7 +62,6 @@
 					<li><a href="#portfolio" class="smoothScroll">PORTAFOLIO</a></li>
 					<li><a href="#pricing" class="smoothScroll">PLANES</a></li>
 					<li><a href="#about" class="smoothScroll">NOSOTROS</a></li>
-
 					<li><a href="#contact" class="smoothScroll"><i class="fa fa-envelope fa-lg" id="envelope"></i></a></li>
 				</ul>
 			</div>
@@ -193,14 +215,14 @@
 					<div class="plan">
 						<div class="plan-title">
 							<h3>Pagina Web</h3>
-							<small>$100 por plantilla</small>
-							<small> incluye:</small>
+							<small>$30 incluye</small>
+
 						</div>
 						<ul>
-							<li>Personalizacion: 0$</li>
-							<li>nombre de dominio por 1 mes</li>
-							<li>web-hosting por 1 mes</li>
-							<li>soporte tecnico 1 mes</li>
+							<li>Plantilla web generica: 20$</li>
+							<li>Personalizacion: 10$</li>
+							<li>soporte tecnico 1 mes: 0$</li>
+							<li>dominio generico: 0$</li>
 						</ul>
 						<button class="btn btn-warning">Comprar</button>
 					</div>
@@ -343,14 +365,17 @@
 				<div class="col-md-12 col-sm-12">
 					<h2>Escribenos</h2>
 				</div>
-				<form action="#" method="post" role="form">
+				<form action="#" method="post" role="form" id="contact-form">
 					<div class="col-md-1 col-sm-1"></div>
 					<div class="col-md-10 col-sm-10" id="div-form">
+						<input type="hidden" name="contact_number">
 						<div class="col-md-6 col-sm-6">
-							<input name="name" type="text" autocomplete="off" class="form-control" id="name" placeholder="Nombre">
+							<input name="from_name" type="text" autocomplete="off" class="form-control" id="name"
+								placeholder="Nombre">
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<input name="email" type="email" autocomplete="off" class="form-control" id="email" placeholder="Email">
+							<input name="from_email" type="email" autocomplete="off" class="form-control" id="email"
+								placeholder="Email">
 						</div>
 						<div class="col-md-12 col-sm-12">
 							<input name="subject" type="text" autocomplete="off" class="form-control" id="subject"
