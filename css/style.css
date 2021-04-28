@@ -74,7 +74,7 @@ img:hover {
 }
 .navbar-brand:hover,
 .navbar-brand:clicked {
-  background: dc5034;
+  background: #dc5034;
 }
 .navbar-default .navbar-nav li a {
   border-right: 1px solid #ddd6d6;
