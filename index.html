@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Servidor subido Reactor-Sietmas 07 de mayo de 2021-->
 
 <head>
 	<meta charset="utf-8">
@@ -7,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<title>Reactor-sys-web</title>
+	<title>Reactor-Sistemas</title>
 	<!-- stylesheet css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -27,13 +28,10 @@
 		window.onload = function () {
 			document.getElementById('contact-form').addEventListener('submit', function (event) {
 				event.preventDefault();
-				// generate a five digit number for the contact_number variable
-				//	this.contact_number.value = Math.random() * 100000 | 0;
 				this.id_site.value = 'reactor-sys';
-				// these IDs from the previous steps
 				emailjs.sendForm('service_ehpi6v9', 'template_tqe2w2x', this)
 					.then(function () {
-						alert('Tu mensaje fue enviado con exito!... espera nuestra respuesta pronto.');
+						alert('Tu mensaje fue enviado con exito!... Te responderemos a la brevedad.');
 						document.getElementById('name').value = '';
 						document.getElementById('email').value = '';
 						document.getElementById('subject').value = '';
@@ -44,11 +42,9 @@
 			});
 		}
 	</script>
-
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
-
 	<!-- navigation -->
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -58,28 +54,30 @@
 					<span class="icon icon-bar"></span>
 					<span class="icon icon-bar"></span>
 				</button>
-				<a href="#home" class="navbar-brand smoothScroll">Reactor-Sys</a>
+				<a href="#home" class="navbar-brand smoothScroll">Reactor-Sis</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home" class="smoothScroll">HOME</a></li>
+					<li><a href="#home" class="smoothScroll">INICIO</a></li>
 					<li><a href="#service" class="smoothScroll">SERVICIOS</a></li>
 					<li><a href="#portfolio" class="smoothScroll">PORTAFOLIO</a></li>
-					<li><a href="#pricing" class="smoothScroll">PLANES</a></li>
+					<li><a href="#pricing-tables" class="smoothScroll">PLANES</a></li>
 					<li><a href="#about" class="smoothScroll">NOSOTROS</a></li>
-					<li><a href="#contact" class="smoothScroll"><i class="fa fa-envelope fa-lg" id="envelope"></i></a></li>
+					<li><a href="#contact" class="smoothScroll">
+							<i class="fa fa-envelope fa-lg" id="envelope"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-
 	<!-- home section -->
 	<div id="home">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-6">
 					<h2>Bienvenido a</h2>
-					<h1>Reactor-Sys <strong>Sistemas</strong></h1>
+					<h1>Reactor <strong>Sistemas</strong></h1>
 					<p>Te invitamos a navegar de manera fluida por nuestro sitio web,
 						pensado para facilitar la consulta y el feedback de informacion con el fin de prestarte un servicio lo mas
 						personalizado posible.</p>
@@ -99,22 +97,21 @@
 				<div class="col-md-4 col-sm-4 circulo">
 					<i class="fa fa-laptop"></i>
 					<h3>Diseño</h3>
-					<p>Nos encargamos del diseño de tu pagina web ofreciendote las mejores y mas eficientes opciones
-						que te permitan una exposicion clara y directa plasmando tus ideas en tu sitio durante el proceso.
+					<p>Nos encargamos del diseño de tu pagina web ofreciendote distintas opciones
+						que te permitan una exposicion clara y directa en funcion de tus planes de crecimiento.
 					</p>
 				</div>
 				<div class="col-md-4 col-sm-4 circulo">
 					<i class="fa fa-cubes"></i>
 					<h3>Desarrollo</h3>
-					<p>Ofrecemos desarrollo e integracion de aplicaciones especificas en diferentes areas como el e-commerce
-						y/o aplicaciones de automatizacion de procesos administrativos de tu empresa.</p>
+					<p>Te ofrecemos el desarrollo de aplicaciones especificas en diferentes areas de tu interes como e-commerce
+						y/o automatizacion de procesos administrativos de tu negocio.</p>
 				</div>
 				<div class="col-md-4 col-sm-4 circulo">
 					<i class="fa fa-cogs"></i>
 					<h3>Soporte</h3>
-					<p>Te brindamos un confiable y seguro soporte tecnico para todos los servicios contratados y para
-						cualquier otra necesidad que surja ya sea en el area de redes, servidores, desarrollo o entrenamiento de
-						personal.
+					<p>Te brindamos un confiable y seguro soporte tecnico para todos los servicios contratados
+						y para cualquier eventualidad no prevista.
 					</p>
 				</div>
 			</div>
@@ -131,9 +128,6 @@
 			<div class="col-md-1 col-sm-1"></div>
 		</div>
 	</div>
-
-
-
 
 	<!-- portfolio section -->
 	<div id="portfolio">
@@ -179,8 +173,8 @@
 								</div>
 
 								<div class="iso-box soporte col-md-4 col-sm-4 col-xs-12">
-									<a href="images/soporte3.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/soporte3.jpg" alt="portfolio img"></a>
+									<a href="images/soporte3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/soporte3.jpg"
+											alt="portfolio img"></a>
 								</div>
 
 								<div class="iso-box soporte col-md-4 col-sm-4 col-xs-12">
@@ -208,63 +202,119 @@
 	</div>
 
 	<!-- pricing section -->
-	<div id="pricing">
+	<section id="pricing-tables" class="pricing-tables">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<h2>Nuestros Planes</h2>
+				<div class="col-md-12">
+					<div class="section-heading">
+						<span>Nuestros Planes</span>
+					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-10">
-					<div class="plan">
-						<div class="plan-title">
-							<h3>Pagina Web</h3>
-							<small>$30 incluye</small>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="table-item item1">
+						<div class="top-content">
+							<h4>Inicio Facil</h4>
+							<h1>$20</h1>
+						</div>
+						<ul>
+							<li>
+								<p>1 Pagina Web (plantilla)</p>
+							</li>
+							<li>
+								<p>Personalizacion de plantilla</p>
+							</li>
+							<li>
+								<p>1 Dominio Generico (sub-dominio)</p>
+							</li>
+							<li>
+								<p>Mantenimiento 1 mes gratis</p>
+							</li>
+
+							<li class="asterisco-li">
+								<p class="asteriscos">Agrega 1 Dominio Personal .ml o .tk mas Certificado SSL
+									mas 1 cuenta de email: solo paga $10 adicionales</p>
+							</li>
+						</ul>
+						<div class="blue-button item1">
+							<a href="#">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="table-item">
+						<div class="top-content">
+							<h4>Emprendedor</h4>
+							<h1>$60</h1>
 
 						</div>
 						<ul>
-							<li>Plantilla web generica: 20$</li>
-							<li>Personalizacion: 10$</li>
-							<li>soporte tecnico 1 mes: 0$</li>
-							<li>dominio generico: 0$</li>
+							<li>
+								<p>1 Pagina web (plantilla)</p>
+							</li>
+							<li>
+								<p>Personalizacion de plantilla</p>
+							</li>
+							<li>
+								<p>Hosting de tu sitio web 1 mes gratis</p>
+							</li>
+							<li>
+								<p>Dominio Propio 1 año gratis</p>
+							</li>
+							<li>
+								<p>3 cuentas de correo gratis</p>
+							</li>
+							<li>
+								<p>Certificado de seguridad SSL gratis</p>
+							</li>
+							<li>
+								<p>Mantenimiento 2 meses gratis</p>
+							</li>
 						</ul>
-						<button class="btn btn-warning">Comprar</button>
+						<div class="blue-button">
+							<a href="#">Comprar</a>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-10">
-					<div class="plan">
-						<div class="plan-title">
-							<h3>Desarrollo </h3>
-							<small>$5/hora</small>
-							<small> incluye:</small>
+				<div class="col-md-4">
+					<div class="table-item">
+						<div class="top-content">
+							<h4>Emprendedor Plus</h4>
+							<h1>$240</h1>
+
 						</div>
 						<ul>
-							<li>aplicaciones pequeñas: 20 horas</li>
-							<li>aplicaciones medianas: 50 horas</li>
-							<li>aplicaciones grandes: + 100 horas</li>
-							<li>abono solo de 10% para iniciar</li>
+							<li>
+								<p>1 Pagina web (plantilla)</p>
+							</li>
+							<li>
+								<p>Personalizacion de plantilla</p>
+							</li>
+							<li>
+								<p>Hosting de tu sitio web 1 año gratis</p>
+							</li>
+							<li>
+								<p>Dominio Propio 1 año gratis</p>
+							</li>
+							<li>
+								<p>5 cuentas de correo gratis</p>
+							</li>
+							<li>
+								<p>Certificado de seguridad SSL gratis</p>
+							</li>
+							<li>
+								<p>Mantenimiento 3 meses gratis</p>
+							</li>
 						</ul>
-						<button class="btn btn-warning">Comprar</button>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-10">
-					<div class="plan">
-						<div class="plan-title">
-							<h3>Soporte Tecnico</h3>
-							<small>$10/hora</small>
-							<small></small>
+						<div class="blue-button">
+							<a href="#">Comprar</a>
 						</div>
-						<ul>
-							<li>lenguajes: java, javascript, php</li>
-							<li>Servidores, linux, dockers, nodejs </li>
-							<li>web-hosting, dominios, websites</li>
-							<li>frameworks: reactjs, spring-boot </li>
-						</ul>
-						<button class="btn btn-warning">Comprar</button>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!-- divider section -->
 	<div class="container">
@@ -323,27 +373,16 @@
 				<div class="col-md-3 col-sm-6">
 					<img src="images/febb_foto.jpg" class="img-responsive" alt="team img">
 					<h3>Ing. Frank Bolivar</h3>
-					<h4 id="team-title">Desarrollador Senior</h4>
+					<h4 id="team-title">Jefe de Desarrollo</h4>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<img src="images/team2.jpg" class="img-responsive" alt="team img">
 					<h3>Ing. Chale Leon</h3>
-					<h4 id="team-title">Desarrollador Senior</h4>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/team3.jpg" class="img-responsive" alt="team img">
-					<h3>Jorge Caminos</h3>
-					<h4 id="team-title">Desarrollador Junior</h4>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/team4.jpg" class="img-responsive" alt="team img">
-					<h3>Maria Sandar</h3>
-					<h4 id="team-title">Desarrollador Junior</h4>
+					<h4 id="team-title">Jefe de Soporte Tecnico</h4>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<!-- divider section -->
 	<div class="container">
 		<div class="row">

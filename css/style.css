@@ -1,9 +1,7 @@
 /*
-
-Template 2080 Minimax
-
-http://www.tooplate.com/view/2080-minimax
-
+Reactor Sistemas
+07-05-2021
+http://www.reactorsistemas.online
 */
 
 body {
@@ -48,7 +46,7 @@ img {
 }
 img:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 /* navigation */
@@ -135,24 +133,23 @@ img:hover {
   line-height: 10px;
 }
 #home .btn {
-  background: #4db6ac;
-  border: 1px solid #2e756e;
-  border-radius: 0px;
+  background: #dc5034;
+  border-radius: 5px;
   color: #444;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 16px;
   padding-top: 14px;
-  width: 150px;
+  width: 125px;
   padding: 20px;
   margin-top: 20px;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
 }
 #home .btn:hover {
-  background: #dc5034;
+  background: #cc4f36;
   border-color: transparent;
   color: #fff;
 }
@@ -223,6 +220,9 @@ img:hover {
 #team img {
   border: 1px solid #666;
   padding: 15px;
+}
+
+.team-centered {
 }
 
 h4 {
@@ -305,60 +305,129 @@ h4 {
   display: block;
 }
 
-/* pricing section */
-#pricing {
-  padding-top: 60px;
-  padding-bottom: 80px;
+.section-heading {
   text-align: center;
+  margin-top: 125px;
 }
-#pricing h2 {
-  border-left: 2px solid #f2af00;
-  display: inline-block;
-  padding: 10px 10px 10px 20px;
-}
-#pricing .plan {
-  border: 2px solid #444;
-  padding: 20px 20px 40px 20px;
-  margin-top: 60px;
-  background-color: #80cbc4;
-}
-#pricing .plan .plan-title {
-  border-bottom: 2px solid #444;
-  padding: 20px 10px 20px 10px;
-  margin-bottom: 20px;
-}
-#pricing .plan small,
-#pricing .plan ul li {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-}
-#pricing .plan ul {
-  padding: 0;
-}
-#pricing .plan ul li {
+
+.section-heading span {
+  font-size: 30px;
   display: block;
-  padding: 10px 0px 10px 0px;
+  margin: 0px 0px 20px 0px;
+  color: #cc4f36;
+  font-weight: bolder;
+}
+
+.section-heading h2 {
+  margin-bottom: 0px;
+  margin-top: 14px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #232323;
+  letter-spacing: 0.5px;
+}
+
+.blue-button a {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #4883ff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+
+
+
+.blue-button a:hover {
+  background-color: #cc4f36;
+}
+
+/* pricing-table section */
+section.pricing-tables .table-item {
+  text-align: center;
+  border: 0.5px solid #cac9c9;
+  background-color: #eeeeee;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0px 0px 40px 0px;
+}
+
+section.pricing-tables .table-item .top-content {
+  background-color: #4883ff;
+  padding: 25px 30px 20px 30px;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+section.pricing-tables .table-item .top-content h4 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0px;
+  margin-bottom: 0px;
+}
+
+section.pricing-tables .table-item .top-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+section.pricing-tables .table-item ul {
+  margin: 30px 0px !important;
+}
+
+section.pricing-tables .table-item ul li {
+  margin: 10px 0px;
+  line-height: 20px;
+}
+
+section.pricing-tables .table-item ul li p {
+padding-right: 15px;
+}
+
+::marker{
+  color:#cc4f36;
+}
+
+section.pricing-tables .table-item.item1{
+ 
+}
+
+
+
+section.pricing-tables .table-item.item1 ul li:last-child::marker {
+  content: "(*)";
+  color: green;
+  font-size: 20px;
   font-weight: bold;
 }
-#pricing .plan .btn {
-  background: #dc5034;
-  border: none;
-  border-radius: 0px;
-  color: #000;
-  font-weight: bolder;
-  font-size: 20px;
-  width: 140px;
-  height: 50px;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
+
+section.pricing-tables .table-item.item1 ul li:last-child{
+  margin-top: 40px;
+  margin-bottom: 0;
 }
-#pricing .plan .btn:hover {
-  background: #f2af00;
-  border-color: transparent;
+
+section.pricing-tables .table-item ul li:last-child {
+  line-height: 15px;
 }
+
+.asteriscos {
+  font-size: 12px;
+  margin-bottom: 0;  
+}
+
+
+
+
 
 /* contact section */
 #contact {
@@ -483,6 +552,7 @@ footer span {
 /* scrolltop section */
 .go-top {
   background-color: #dc5034;
+  border-radius: 5px;
   font-size: 20px;
   top: 5em;
   right: 1em;
@@ -490,9 +560,9 @@ footer span {
   display: none;
   position: fixed;
   text-decoration: none;
-  width: 60px;
-  height: 60px;
-  line-height: 58px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
@@ -516,48 +586,30 @@ footer span {
     float: right;
   }
 
-#name{
-  position: relative;
+  #name {
+    position: relative;
+  }
+  #div-nombre > label {
+    position: relative;
+    top: 100px;
+    right: 160px;
+  }
+  .table-item {
+    margin-bottom: 30px;
+  }
 }
-#div-nombre > label{
-  position: relative;
-  top:100px;
-  right:160px;
-
-}
-
-}
-
 
 /* media 960 */
 @media only screen and (min-width: 760px) {
-  
-#name{
-  position: relative;
+  #name {
+    position: relative;
+  }
+  #div-nombre > label {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }
-#div-nombre > label{
-  position: relative;
-  top:0;
-  right:0;
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media 360 */
 @media only screen and (max-width: 360px) {
@@ -565,24 +617,15 @@ footer span {
     padding-bottom: 30px;
   }
 
-  #name{
-  position: relative;
+  #name {
+    position: relative;
+  }
+  #div-nombre > label {
+    position: relative;
+    top: 100px;
+    right: 160px;
+  }
 }
-#div-nombre > label{
-  position: relative;
-  top:100px;
-  right:160px;
-
-}
-}
-
-
-
-
-
-
-
-
 
 #contact .form-control::placeholder {
   color: rgb(155, 150, 150);
@@ -601,7 +644,3 @@ label {
   font-size: 20px;
   color: blue;
 }
-
-
-
-
