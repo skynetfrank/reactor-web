@@ -461,10 +461,10 @@ label {
   height: 50px;
 }
 #contact input[type="submit"] {
-  background: #4db6ac;
+  background: #5ae4d6;
   font-size: 25px;
   border-radius: 5px;
-  color: #ffffff;
+  color: rgb(49, 45, 45);
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
