@@ -608,16 +608,10 @@ footer span {
   .table-item {
     margin-bottom: 30px;
   }
-
-  .h3-nosotros {
-  margin-top: 30px;
-}
 }
 
 /* media 960 */
 @media only screen and (min-width: 760px) {
-  .h3-nosotros {
-  margin-top: 30px;
 }
 
 /* media 360 */
@@ -625,8 +619,6 @@ footer span {
   #team h4 {
     padding-bottom: 30px;
   }
-   .h3-nosotros {
-  margin-top: 30px;
 }
 
 #contact .form-control::placeholder {
