@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/nivo-lightbox.css">
 	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- google web font css -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -73,20 +76,99 @@
 		</div>
 	</div>
 	<!-- home section -->
-	<div id="home">
+	<div id="home" class="slider">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-6">
-					<h2>Bienvenido a</h2>
-					<h1>Reactor <strong>Sistemas</strong></h1>
-					<p>Te invitamos a navegar de manera fluida por nuestro sitio web,
-						pensado para facilitar la consulta y el feedback de informaci&oacuten con el
-						f&iacuten de prestarte un servicio lo m&aacutes personalizado posible.</p>
-					<a href="#service" class="btn btn-default smoothScroll">ver m&aacutes...</a>
+
+				<div class="owl-carousel owl-theme">
+
+					<div class="item item-first">
+						<div class="caption">
+							<div class="col-md-offset-1 col-md-10">
+								<h2>Bienvenido a</h2>
+								<h1 class="animate__animated animate__lightSpeedInLeft">Reactor <strong>Sistemas</strong></h1>
+								<p>Te invitamos a navegar por nuestro sitio web,</p>
+								<p>pensado para facilitar la consulta y el feedback de</p>
+								<p> informaci&oacuten con el f&iacuten de prestarte un servicio</p>
+								<p> lo m&aacutes personalizado posible.</p>
+								<a href="#about" class="btn btn-default smoothScroll">ver m&aacutes...</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item item-second">
+						<div class="caption">
+							<div class="col-md-offset-1 col-md-10">
+								<h2>Bienvenido a</h2>
+								<h1>Reactor <strong>Sistemas</strong></h1>
+								<a href="#service" class="btn btn-default smoothScroll" id="btn-home-2">Conoce Nuestros Servicios</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item item-third">
+						<div class="caption">
+							<div class="col-md-offset-1 col-md-10">
+								<h2>Bienvenido a</h2>
+								<h1>Reactor <strong>Sistemas</strong></h1>
+
+								<a href="#portfolio" class="btn btn-default smoothScroll" id="btn-home-3">Visita Nuestras Plantillas</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item item-fourth">
+						<div class="caption">
+							<div class="col-md-offset-1 col-md-10">
+								<h2>Bienvenido a</h2>
+								<h1>Reactor <strong>Sistemas</strong></h1>
+								<a href="#pricing-tables" class="btn btn-default smoothScroll" id="btn-home-4">Consulta Nuestros
+									Planes</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item item-fith">
+						<div class="caption">
+							<div class="col-md-offset-1 col-md-10">
+								<h2>Bienvenido a</h2>
+								<h1>Reactor <strong>Sistemas</strong></h1>
+								<a href="#contact" class="btn btn-default smoothScroll" id="btn-home-5">Contactanos</a>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<!-- service section -->
 	<div id="service">
@@ -151,32 +233,32 @@
 							<div class="iso-box-wrapper col4-iso-box">
 
 								<div class="iso-box todo websites apps soporte apps soporte col-md-4 col-sm-6 col-xs-12">
-									<a href="#portfolio" data-lightbox-gallery="portfolio-gallery"><img src="images/reactorHome.jpg"
-											alt="portfolio img"></a>
+									<a href="#portfolio" data-lightbox-gallery="portfolio-gallery" target="_blank"><img
+											src="images/reactorHome.jpg" alt="portfolio img"></a>
 								</div>
 								<div class="iso-box apps col-md-4 col-sm-4 col-xs-12">
-									<a href="https://amazoniax.herokuapp.com" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/amazonia.jpg" alt="portfolio img"></a>
+									<a href="https://amazoniax.herokuapp.com" data-lightbox-gallery="portfolio-gallery"
+										target="_blank"><img src="images/amazonia.jpg" alt="portfolio img"></a>
 								</div>
 
 								<div class="iso-box  websites col-md-4 col-sm-4 col-xs-12">
-									<a href="https://generica-web.herokuapp.com/" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img6.jpg" alt="portfolio img"></a>
+									<a href="https://generica-web.herokuapp.com/" data-lightbox-gallery="portfolio-gallery"
+										target="_blank"><img src="images/portfolio-img6.jpg" alt="portfolio img"></a>
 								</div>
 
 								<div class="iso-box  websites col-md-4 col-sm-4 col-xs-12">
-									<a href="https://canaima.herokuapp.com/" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/canaima-web.jpg" alt="portfolio img"></a>
+									<a href="https://canaima.herokuapp.com/" data-lightbox-gallery="portfolio-gallery"
+										target="_blank"><img src="images/canaima-web.jpg" alt="portfolio img"></a>
 								</div>
 
 								<div class="iso-box  websites col-md-4 col-sm-4 col-xs-12">
-									<a href="https://celebration-web.herokuapp.com/" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/celebration-web.jpg" alt="portfolio img"></a>
+									<a href="https://celebration-web.herokuapp.com/" data-lightbox-gallery="portfolio-gallery"
+										target="_blank"><img src="images/celebration-web.jpg" alt="portfolio img"></a>
 								</div>
 
 								<div class="iso-box websites col-md-4 col-sm-4 col-xs-12">
-									<a href="https://centro-salud.herokuapp.com/" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img10.jpg" alt="portfolio img"></a>
+									<a href="https://centro-salud.herokuapp.com/" data-lightbox-gallery="portfolio-gallery"
+										target="_blank"><img src="images/portfolio-img10.jpg" alt="portfolio img"></a>
 								</div>
 
 							</div>
@@ -511,6 +593,7 @@
 	<script src="js/jquery.nav.js"></script>
 	<script src="js/isotope.js"></script>
 	<script src="js/imagesloaded.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/custom.js"></script>
 
 </body>
